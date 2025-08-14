@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Portfolio</title>
     <style>
         body
         {
+            margin: 50px;
+            font-size: 18px;
             background-color: #0a0a0a;
+        }
+        @media screen and (max-width: 768px)
+        { body{
+            margin: 20px;
+            font-size: 16px;
+        }
+        }
+        @media screen and (max-width:480px)
+        {
+            body{
+                margin: 10px;
+                font-size: 14px;
+            }
         }
         .textchange::after
         {
@@ -176,49 +192,7 @@
         color: #00ff00;
         border: 1px solid white;
        }
-       .first 
-       {
-            opacity: 0;
-            
-            animation: zoomin 0.6s ease forwards 0.5s;
-       }
-       @keyframes zoomin {
-        100%{
-            opacity: 1;     
-        }
-       }
-       .second 
-       {
-            opacity: 0;
-            
-            animation: zoomin 0.6s ease forwards 1.9s;
-       }
-       @keyframes zoomin {
-        100%{
-            opacity: 1;     
-        }
-       }
-       .third 
-       {
-            opacity: 0;
-            
-            animation: zoomin 0.6s ease forwards 2.7s;
-       }
-       @keyframes zoomin {
-        100%{
-            opacity: 1;     
-        }
-       }
-       .fourth 
-       {
-            opacity: 0;            
-            animation: zoomin 0.6s ease forwards 3.7s;
-       }
-       @keyframes zoomin {
-        100%{
-            opacity: 1;     
-        }
-       }
+      
        .resume
        {
         margin-left: 160px;
@@ -269,6 +243,7 @@
        .menu img
        {
         background-color: white;
+        visibility: visible;
        }
        .menu img:hover
        {
@@ -295,9 +270,9 @@
         <ul>
             <div class="menu" style="margin-left: -140px;">
             <li style="color: white;list-style: none;"><a href="#"><img src="homeblack.png" id="home"class="imge" style="height: 30px;width: 30px;cursor: pointer;margin-top: -290px;border-radius: 50%;padding: 8px;margin-bottom: 90px;"></li></a>
-            <li style="color: white;list-style: none;"><a href="#about"><img src="personblack.png" id="detail"class="imge" alt="" style="height: 30px;width: 30px;cursor: pointer;margin-left: 60px;margin-top: -200px;margin-bottom: 110px;border-radius: 100%;padding: 8px;"></li></a>
-            <li style="color: white;list-style: none;"><a href="#skil"><img src="skillblack.png" class="imge" alt="" style="height: 30px;width: 30px;cursor: pointer;margin-top: -200px;margin-bottom: 125px;margin-left: 120px;border-radius: 100%;padding: 8px;"></li></a>
-            <li style="color: white;list-style: none;"><a href="#other"><img src="otherblack.png" class="imge" alt="" style="height: 30px;width: 30px;cursor: pointer;margin-top: -200px;margin-bottom: 143px;margin-left: 180px;border-radius: 100%;padding: 8px;"></li></a>
+            <li style="color: white;list-style: none;"><a href="#person"><img src="personblack.png" id="detail"class="imge" alt="" style="height: 30px;width: 30px;cursor: pointer;margin-left: 60px;margin-top: -200px;margin-bottom: 110px;border-radius: 100%;padding: 8px;"></li></a>
+            <li style="color: white;list-style: none;"><a href="#skil"><img src="skillblack.png" class="imge" alt="" style="height: 30px;width: 30px;cursor: pointer;margin-top: -200px;margin-bottom: 130px;margin-left: 120px;border-radius: 100%;padding: 8px;"></li></a>
+            <li style="color: white;list-style: none;"><a href="#other"><img src="otherblack.png" class="imge" alt="" style="height: 30px;width: 30px;cursor: pointer;margin-top: -180px;margin-bottom: 500px;margin-left: 180px;border-radius: 100%;padding: 8px;"></li></a>
             </div>
         </ul>
     </details>
