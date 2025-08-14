@@ -4,83 +4,127 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-        body
-        {
+        body {
             margin: 50px;
             font-size: 18px;
             background-color: #0a0a0a;
         }
-        @media screen and (max-width: 768px)
-        { body{
-            margin: 20px;
-            font-size: 16px;
+
+        @media screen and (max-width: 768px) {
+            body {
+                margin: 20px;
+                font-size: 16px;
+            }
+            .first h1, .first h2 {
+                margin-left: 0;
+                text-align: center;
+            }
+            .about img {
+                margin: 0 auto;
+                display: block;
+                height: 300px;
+                width: 300px;
+            }
+            .round, .round1, .round2, .skill, .resume, .contactme {
+                margin: 20px auto;
+                display: block;
+            }
+            .icon {
+                margin-left: 0 !important;
+                text-align: center;
+            }
+            .perosns img {
+                margin: 0 auto !important;
+                display: block;
+            }
+            .perosns h3, .perosns h4, .perosns h1 {
+                margin-left: 0 !important;
+                text-align: center;
+            }
         }
-        }
-        @media screen and (max-width:480px)
-        {
-            body{
+
+        @media screen and (max-width: 480px) {
+            body {
                 margin: 10px;
                 font-size: 14px;
             }
+            .first img {
+                height: auto;
+                width: 100%;
+            }
+            .first h1, .first h2 {
+                margin-left: 0;
+                font-size: 22px;
+                text-align: center;
+            }
+            .about img {
+                margin: 0 auto;
+                display: block;
+                height: 200px;
+                width: 200px;
+            }
+            .skill {
+                width: 160px;
+                margin: 20px auto;
+            }
+            .resume, .contactme {
+                margin: 20px auto;
+                display: block;
+            }
+            .round, .round1, .round2 {
+                margin: 20px auto;
+            }
+            .perosns img {
+                margin: 0 auto !important;
+                display: block;
+            }
+            .perosns h3, .perosns h4, .perosns h1 {
+                margin-left: 0 !important;
+                text-align: center;
+            }
+            .icon {
+                margin-left: 0 !important;
+                text-align: center;
+            }
         }
-        .textchange::after
-        {
+
+        .textchange::after {
             content: "Software Devloper";
             color: #00ff00;
             animation: changetext 8s infinite;
             transition: .5s;
         }
         
-        @keyframes changetext 
-        {
-            1%
-            {
-                content: "Software Devloper";
-            }    
-            25%
-            {
-                content: "Freelancer";
-            }
-            50%
-            {
-                content: "Web Designer";
-            }
-            75%
-            {
-                content: "Programmer";
-            }
-            100%
-            {
-                content: "Nothing";
-            }
+        @keyframes changetext {
+            1% { content: "Software Devloper"; }    
+            25% { content: "Freelancer"; }
+            50% { content: "Web Designer"; }
+            75% { content: "Programmer"; }
+            100% { content: "Nothing"; }
         }
-        .first img
-        {
+
+        .first img {
             height: 500px;
             width: 100%;
         }
-        .first h2 
-        {
+        .first h2 {
             font-size: 40px;
             color: white;
             margin-bottom: -100px;
             margin-left: 500px;
         }
-        .first h1
-        {
+        .first h1 {
             font-size: 40px;
             color: white;
             margin-top: -300px;
             margin-left: 500px;
         }
-        .about h1 
-        {
+        .about h1 {
             color: white;
             margin-top: -50px;
             text-align: center;
         }
-        .about img
-        {
+        .about img {
             height: 400px;
             width: 400px;
             margin-left: 400px;
@@ -88,8 +132,7 @@
             box-shadow:0 0 20px greenyellow; 
             box-shadow: 0px 0px 15px cyan;
         }
-        .round
-        {
+        .round {
             background: yellowgreen;
             border-radius: 50%;
             height: 70px;
@@ -97,8 +140,7 @@
             margin-left: 580px;
             margin-top: 100px;
         }
-        .sqaure
-        {
+        .sqaure {
             background: black;
             width: 40px;
             height: 50px;
@@ -106,8 +148,7 @@
             margin-left: 15px;
             margin-top: -50px;
         }
-        .round1
-        {
+        .round1 {
             background: yellowgreen;
             border-radius: 50%;
             height: 70px;
@@ -115,8 +156,7 @@
             margin-left: 580px;
             margin-top: 200px;
         }
-        .round2
-        {
+        .round2 {
             background: yellowgreen;
             border-radius: 50%;
             height: 70px;
@@ -124,18 +164,15 @@
             margin-left: 580px;
             margin-top: 200px;
         }
-        .skill
-        {  
+        .skill {
             position: relative;
             margin-left: 500px;
             margin-top: 50px;
             height: 250px;
             width: 200px;
             padding: 20px;
-           
         }
-        .outer
-        {
+        .outer {
             height: 160px;
             width: 160px;
             border-radius: 100px;                     
@@ -143,8 +180,7 @@
             margin-left: 20px;
             margin-top: 20px;
         }
-        .inner
-        {
+        .inner {
             height: 120px;
             width: 120px;
             border-radius: 50%;
@@ -154,108 +190,90 @@
             margin-left: 20px;
             margin-top: 20px;
         }
-        #number
-        {
+        #number {
             font-weight: 900px;
             color: white;
         }
-        #number:hover
-        {
+        #number:hover {
             font-size: 50px;
             transition: 0.5s;
         }
-        .contact img:hover
-        {
+        .contact img:hover {
             background: rgb(0, 255, 0);
             border-radius: 50%;
             transition: 0.5s;
         }
-        .contact img
-        {
+        .contact img {
             background-color: rgb(59, 85, 60);
             border-radius: 100%;           
         }
-       .contactme
-       {
-        background-color: #00ff00;
-        padding: 10px;
-        border-radius: 30px;
-        border: none;
-        width: 130px;
-        margin-left: 550px;
-        transition: 0.5s;
-        color: white;
+       .contactme {
+            background-color: #00ff00;
+            padding: 10px;
+            border-radius: 30px;
+            border: none;
+            width: 130px;
+            margin-left: 550px;
+            transition: 0.5s;
+            color: white;
        }
-       .contactme:hover
-       {
-        background: transparent;
-        color: #00ff00;
-        border: 1px solid white;
+       .contactme:hover {
+            background: transparent;
+            color: #00ff00;
+            border: 1px solid white;
        }
-      
-       .resume
-       {
-        margin-left: 160px;
-        margin-top: 40px;
-        width: 100px;
-        padding: 10px;
-        background-color: #00ff00;
-        border: none;
-        color: black;
-        border-radius: 10px;
-        transition: 0.5s;
-        cursor: pointer;
+       .resume {
+            margin-left: 160px;
+            margin-top: 40px;
+            width: 100px;
+            padding: 10px;
+            background-color: #00ff00;
+            border: none;
+            color: black;
+            border-radius: 10px;
+            transition: 0.5s;
+            cursor: pointer;
        }
-       .resume:hover
-       {
-        background: transparent;
-        color: #00ff00;
-        border: 1px solid white;
+       .resume:hover {
+            background: transparent;
+            color: #00ff00;
+            border: 1px solid white;
        }
-       details
-       {
-        width: 220px;
-        height: 300px;
-        color: #00f5c4;
-       
+       details {
+            width: 220px;
+            height: 300px;
+            color: #00f5c4;
        }
-     
-       summary
-       {
-        text-align: center;
-        display: inline-block;
-        size: 50px;
+       summary {
+            text-align: center;
+            display: inline-block;
+            size: 50px;
        }
-      
-       summary::before
-       {
-        content: "\2630";
+       summary::before {
+            content: "\2630";
        }
-       details[open] summary::before
-       {
-        content: "\00d7";
+       details[open] summary::before {
+            content: "\00d7";
        }
-       details>summary
-       {
-        list-style: none;
-        cursor: pointer;
+       details>summary {
+            list-style: none;
+            cursor: pointer;
        }
-       .menu img
-       {
-        background-color: white;
-        visibility: visible;
+       .menu img {
+            background-color: white;
+            visibility: visible;
        }
-       .menu img:hover
-       {
-        background: linear-gradient(35deg,#00ff00,#00f5c4,#cb29d0);
-        border: 100%;
-        transition: 0.5s;
-        box-shadow: 0 0 20px  cyan ;
+       .menu img:hover {
+            background: linear-gradient(35deg,#00ff00,#00f5c4,#cb29d0);
+            border: 100%;
+            transition: 0.5s;
+            box-shadow: 0 0 20px  cyan ;
        }
-       html{
-        scroll-behavior: smooth;
+       html {
+            scroll-behavior: smooth;
        }
     </style>
+
 </head>
 <body>
 
